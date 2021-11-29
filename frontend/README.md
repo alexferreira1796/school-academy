@@ -22,6 +22,7 @@ Como rodar aplicação
 
 No arquivo ".env", informar o link da API e após isso rodar o comando
 
+yarn install
 yarn start
 ```
 

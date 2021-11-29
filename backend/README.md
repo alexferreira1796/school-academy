@@ -23,6 +23,7 @@ No arquivo ".env", preenchar com os dados de acesso ao banco de dados ou rodar o
 
 Para rodar a aplicação
 
+yarn install
 yarn migrations
 yarn start
 ```
