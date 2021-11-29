@@ -27,6 +27,11 @@ yarn install
 yarn migrations
 yarn start
 
+Usuário default
+Login: admin
+Senha: @admin
+Tipo: Professor
+
 ```
 
 😉 Este projeto foi criado por <a href="https://www.linkedin.com/in/dev-alex-ferreira/">Alex Ferreira</a>
