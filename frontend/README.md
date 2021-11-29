@@ -20,7 +20,9 @@ Segue abaixo as principais tecnologias utilizadas neste projeto:
 ```
 Como rodar aplicação
 
-No arquivo ".env", informar o link da API e após isso rodar o comando
+No arquivo ".env", informar o link da API
+
+Para rodar a aplicação
 
 yarn install
 yarn start
