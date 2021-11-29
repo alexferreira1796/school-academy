@@ -1,10 +1,10 @@
-# School Academy - Front-end
+# School Academy
 
 Projeto desenvolvido durante o Desafio In Company da Mundo Jix para vaga full-stack
 
 ## 💻 Tecnologias utilizadas no Projeto
 
-O projeto foi criado utilizando as seguintes tecnologias: ReactJS, Typescript, Styled-components.
+O projeto foi criado utilizando as seguintes tecnologias: ReactJS, Typescript, Styled-components, NodeJS e Postgres.
 
 Segue abaixo as principais tecnologias utilizadas neste projeto:
 
@@ -14,17 +14,10 @@ Segue abaixo as principais tecnologias utilizadas neste projeto:
     <li>ReactJS ✔️</li>
     <li>React-hooks ✔️</li>
     <li>Styled-components ✔️</li>
+    <li>NodeJS ✔️</li>
     <li>Typescript ✔️</li>
+    <li>JWT Auth  ✔️</li>
+    <li>Postgres  ✔️</li>
 </ul>
 
-```
-Como rodar aplicação
-
-No arquivo ".env", informar o link da API e após isso rodar o comando
-
-yarn install
-yarn start
-
-```
-
-😉 Este projeto foi criado por <a href="https://www.linkedin.com/in/dev-alex-ferreira/">Alex Ferreira</a>
+😉 Obrigado por me proporcionar este desafio!

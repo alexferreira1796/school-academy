@@ -19,13 +19,14 @@ Segue abaixo as principais tecnologias utilizadas neste projeto:
 ```
 Como rodar aplicação
 
-No arquivo ".env", preenchar com os dados de acesso ao banco de dados ou rodar o docker
+No arquivo ".env", preencher com os dados de acesso ao banco de dados ou rodar o docker
 
 Para rodar a aplicação
 
 yarn install
 yarn migrations
 yarn start
+
 ```
 
-😉 Obrigado por me proporcionar este desafio!
+😉 Este projeto foi criado por <a href="https://www.linkedin.com/in/dev-alex-ferreira/">Alex Ferreira</a>
