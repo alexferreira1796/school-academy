@@ -1,12 +1,28 @@
-# Projeto Minha Carteira
+# School Academy - Front-end
 
-Desenvolvido durante curso de React e Typescript com duração de 16 horas
+Projeto desenvolvido durante o Desafio In Company da Mundo Jix para vaga full-stack
 
-````
-Site: https://minha-carteira-react.netlify.app
-Login: admin@minhacarteira.com
-Password: @carteira
-````
+## 💻 Tecnologias utilizadas no Projeto
 
-![alt-text](https://camo.githubusercontent.com/4426c83df47d093e3f6ba8abb1220b1a329d8ce0756bf4835bc24be3ed43eeac/68747470733a2f2f692e6962622e636f2f53307043664d642f64617368626f6172642e676966)
-Não há banco de dados. Os dados são carregados de 2 arquivos que contém arrays simulando os repositórios de dados.
+O projeto foi criado utilizando as seguintes tecnologias: NodeJS, ReactJS, Typescript, Styled-components.
+
+Segue abaixo as principais tecnologias utilizadas neste projeto:
+
+<ul>
+    <li>JavaScript ✔️</li>
+    <li>HTML/CSS ✔️</li>
+    <li>ReactJS ✔️</li>
+    <li>React-hooks ✔️</li>
+    <li>Styled-components ✔️</li>
+    <li>Typescript ✔️</li>
+</ul>
+
+```
+Como rodar aplicação
+
+No arquivo ".env", informar o link da API e após isso rodar o comando
+
+yarn start
+```
+
+😉 Obrigado por me proporcionar este desafio!
