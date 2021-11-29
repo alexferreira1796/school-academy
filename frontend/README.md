@@ -4,7 +4,7 @@ Projeto desenvolvido durante o Desafio In Company da Mundo Jix para vaga full-st
 
 ## 💻 Tecnologias utilizadas no Projeto
 
-O projeto foi criado utilizando as seguintes tecnologias: NodeJS, ReactJS, Typescript, Styled-components.
+O projeto foi criado utilizando as seguintes tecnologias: ReactJS, Typescript, Styled-components.
 
 Segue abaixo as principais tecnologias utilizadas neste projeto:
 
