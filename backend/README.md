@@ -25,6 +25,7 @@ Para rodar a aplicação
 
 yarn install
 yarn migrations
+yarn seed:run
 yarn start
 
 ```
