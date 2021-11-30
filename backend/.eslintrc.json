@@ -62,5 +62,7 @@
     "import/resolver": {
       "typescript": {}
     }
-  }
+  },
+  "linebreak-style": ["error", "windows"],
+  "quotes": ["error", "double"]
 }
