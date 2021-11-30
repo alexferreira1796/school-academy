@@ -19,14 +19,20 @@ Segue abaixo as principais tecnologias utilizadas neste projeto:
 ```
 Como rodar aplicação
 
-No arquivo ".env", preencher com os dados de acesso ao banco de dados ou rodar o docker
+Crie o banco de dados com o nome de sua preferência depois na raiz do projeto no arquivo ".env", 
+preencher com os dados de acesso ao banco de dados ou rodar o docker
 
-Para rodar a aplicação
+Para instalar e rodar a aplicação
 
 yarn install
 yarn migrations
 yarn seed:run
 yarn start
+
+Usuário default
+Login: admin
+Senha: @admin
+Tipo: Professor
 
 ```
 
