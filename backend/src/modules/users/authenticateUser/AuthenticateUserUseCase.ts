@@ -40,8 +40,6 @@ class AuthenticateUserUseCase {
       }
     }
 
-    console.log(username, password, registration, isAdmin);
-
     // Se o numero de registro esta incorreto
     if (
       registration &&
