@@ -19,7 +19,8 @@ Segue abaixo as principais tecnologias utilizadas neste projeto:
 ```
 Como rodar aplicação
 
-Crie o banco de dados com o nome de sua preferência depois na raiz do projeto no arquivo ".env", preencher com os dados de acesso ao banco de dados ou rodar o docker
+Crie o banco de dados com o nome de sua preferência depois na raiz do projeto no arquivo ".env", 
+preencher com os dados de acesso ao banco de dados ou rodar o docker
 
 Para instalar e rodar a aplicação
 
