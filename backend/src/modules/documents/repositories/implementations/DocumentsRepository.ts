@@ -1,9 +1,10 @@
-import { UpdateResult } from 'typeorm';
-import { Documents } from '../../../../database/entities/Documents';
-import { ICreateDocumentDTO } from '../../../dtos/ICreateDocumentDTO';
-import { IGetFilesStudent } from '../../../dtos/IGetFilesStudent';
-import { IUpdateDocumentDTO } from '../../../dtos/IUpdateDocumentDTO';
-import { IDocumentRepository } from '../IDocumentRepository';
+import { UpdateResult } from "typeorm";
+
+import { Documents } from "../../../../database/entities/Documents";
+import { ICreateDocumentDTO } from "../../../dtos/ICreateDocumentDTO";
+import { IGetFilesStudent } from "../../../dtos/IGetFilesStudent";
+import { IUpdateDocumentDTO } from "../../../dtos/IUpdateDocumentDTO";
+import { IDocumentRepository } from "../IDocumentRepository";
 
 class DocumentsRepository implements IDocumentRepository {
   async create({ name_file, idUser, idType, name_path }: ICreateDocumentDTO) {
@@ -23,7 +24,7 @@ class DocumentsRepository implements IDocumentRepository {
       where: { status: true },
     });
     if (registers) {
-      let data = registers
+      const data = registers
         .map(({ hours }) => +hours)
         .reduce((acc, next) => acc + next, 0);
 
@@ -35,13 +36,13 @@ class DocumentsRepository implements IDocumentRepository {
   async findByFilesStudent(id: string): Promise<IGetFilesStudent[]> {
     const docs = await Documents.find({
       where: { idUser: id },
-      relations: ['user'],
+      relations: ["user"],
       order: {
-        user: 'DESC',
+        user: "DESC",
       },
     });
     if (docs) {
-      let data = docs.map(({ id, name_file, name_path, status, hours }) => {
+      const data = docs.map(({ id, name_file, name_path, status, hours }) => {
         return {
           id,
           nameFile: name_file,

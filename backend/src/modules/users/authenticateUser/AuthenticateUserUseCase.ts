@@ -1,6 +1,7 @@
-import { UsersRepository } from '../repositories/implementations/UsersRepository';
-import { compare } from 'bcrypt';
-import { sign } from 'jsonwebtoken';
+import { compare } from "bcrypt";
+import { sign } from "jsonwebtoken";
+
+import { UsersRepository } from "../repositories/implementations/UsersRepository";
 
 interface IRequest {
   username: string;
@@ -32,29 +33,35 @@ class AuthenticateUserUseCase {
   }: IRequest): Promise<IResponse> {
     // Usuário existe por Username
     let user: any;
-    if (username && (username !== null || username !== '')) {
+    if (username && (username !== null || username !== "")) {
       user = await this.repository.findByUserName(username, isAdmin);
       if (!user) {
-        throw new Error('Ops, algum dado você digitou errado!');
+        throw new Error("Ops, algum dado você digitou errado!");
       }
     }
 
+    console.log(username, password, registration, isAdmin);
+
     // Se o numero de registro esta incorreto
-    if (registration && (registration !== null || registration !== '')) {
+    if (
+      registration &&
+      (registration !== null || registration !== "") &&
+      registration !== username
+    ) {
       user = await this.repository.findByRegistration(registration, isAdmin);
       if (!user) {
-        throw new Error('Ops, algum dado você digitou errado!');
+        throw new Error("Ops, algum dado você digitou errado!");
       }
     }
     // Se a senha está correta
     const passwordMatch = await compare(password, user.password);
     if (!passwordMatch) {
-      throw new Error('Ops, algum dado você digitou errado!');
+      throw new Error("Ops, algum dado você digitou errado!");
     }
 
-    const token = sign({}, '7b9eff490dd922746ae54f3385add119', {
+    const token = sign({}, "7b9eff490dd922746ae54f3385add119", {
       subject: user.id,
-      expiresIn: '1d',
+      expiresIn: "1d",
     });
 
     const tokenReturn: IResponse = {

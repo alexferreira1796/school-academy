@@ -1,4 +1,4 @@
-import { DocumentsRepository } from '../../repositories/implementations/DocumentsRepository';
+import { DocumentsRepository } from "../../repositories/implementations/DocumentsRepository";
 
 class GetDocumentHoursUseCase {
   constructor(private documentsRepository: DocumentsRepository) {}
