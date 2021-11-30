@@ -1,6 +1,6 @@
-import { Request, Response } from 'express';
+import { Request, Response } from "express";
 
-import { OpenDocumentUseCase } from './OpenDocumentUseCase';
+import { OpenDocumentUseCase } from "./OpenDocumentUseCase";
 
 class OpenDocumentController {
   handle(req: Request, res: Response): void {
