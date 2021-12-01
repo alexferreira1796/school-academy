@@ -89,6 +89,7 @@ const Items = ({ data, section, ...rest }: IItems) => {
               <HoursInput
                 value={hours}
                 onChange={({ target }: any) => setHours(target.value)}
+                placeholder="00:00"
               />
               <S.Button onClick={() => handleUpdate(data.id, data.status)}>
                 Salvar
